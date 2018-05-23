@@ -6,7 +6,12 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/sticker-mania'
+    connection: {
+      host: '127.0.0.1',
+      user: 'postgres',
+      password: 'postgres',
+      database : 'sticker-mania'
+    }
   },
   production: {
     client: 'pg',
